@@ -1,0 +1,62 @@
+@(userId: String)
+<!DOCTYPE html>
+    <head>
+        <title>Please choose your option:</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/userMiddlePage.css" type="text/css">
+        <style>
+            .styled-select select {
+               background: transparent;
+               border: none;
+               font-size: 14px;
+               height: 29px;
+               padding: 5px; /* If you add too much padding here, the options won't show in IE */
+               width: 268px;
+            }
+            .styled-select {
+               background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+               height: 29px;
+               overflow: hidden;
+               width: 240px;
+            }
+            .styled-select.slate {
+               background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+               height: 34px;
+               width: 240px;
+            }
+            .styled-select.slate select {
+               border: 1px solid #ccc;
+               font-size: 16px;
+               height: 34px;
+               width: 268px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <div id="legend">
+        <legend class="">Please choose your option:</legend>
+        </div>
+        
+        <FORM method="POST" action="/providerMiddle">
+            <div class="styled-select slate">
+                <select name = "selection" class="selectpicker">
+                  <option value="PublishService">Publish service information</option></option>
+                  <option value="EditProjectStatus">Edit projects status</option>
+                </select>
+            </div><br>    
+            <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+            <INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">
+            <INPUT type="submit" name="Submit" value="Return" class="btn btn-default">
+        </FORM>
+        <br>
+        <br>
+        <div>
+        <ul>
+            <li>Publish service information: For service providers to input their services and other related detailed information</li><br>
+            <li>Edit projects status: For service providers to edit the status of the projects.</li><br>
+        </ul>
+        </div>
+        </center>
+    </body>
+</html>

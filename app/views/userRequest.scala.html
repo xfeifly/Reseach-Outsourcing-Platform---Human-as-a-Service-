@@ -1,0 +1,62 @@
+
+@(userId: String, message: String)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Please enter your request</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+    <center>
+        <div id="legend">
+            <legend class="">Query for Services</legend>
+        </div>
+        
+        <FORM method="POST" action="/userRequest">
+            <div class="control-group">
+                <div class="controls">
+                
+                    <label class="control-label"  for="ProjectName">Project name:</label>
+                    <INPUT type="text" name="ProjectName" size="35" placeholder = "project name"></INPUT>
+                    <br>
+                    <l1>@message</l1>
+                    <br>
+                    
+                    <label class="control-label"  for="Description">Description:</label>
+                    <INPUT type="text" name="Description" size="35" placeholder = "descriptions of the project"></INPUT>
+                    <br>
+                    <br>
+                    
+                    <label class="control-label"  for="Expertise">Expertise:</label>
+                    <INPUT type="text" name="Expertise" size="35" placeholder = "expertiset"></INPUT>
+                    <br>
+                    <br>
+                    
+                    <label class="control-label"  for="Expertise">Start Time:</label>
+                    <INPUT type="date" name="Start">
+                    <br>
+                    <br>
+                    
+                    <label class="control-label"  for="Expertise">End Time:</label>
+                    <INPUT type="date" name="End">
+                    <br>
+                    <br>
+                    
+                    <label class="control-label"  for="Expertise">Offered price:</label>
+                    <INPUT type="text" name="Price" size="35" placeholder = "price">
+                    <br>
+                    <br>
+                    
+                    <br>
+                    <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+                    <INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">
+                    <INPUT type="submit" name="Submit" value="Return" class="btn btn-default">
+                </div>
+            </div>    
+        </FORM>
+        </center>
+    </body>
+</html>

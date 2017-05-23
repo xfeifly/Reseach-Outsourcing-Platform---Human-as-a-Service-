@@ -1,0 +1,22 @@
+@(ProviderNames: ArrayList[String], userId: String)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Provider Names</title>
+    </head>
+
+    <body>
+        <h1>Providers' names:</h1>
+        <FORM method="POST" action="/showProvidersNames">
+            <ul>
+            @for(index <- 0 until ProviderNames.size) {
+              <li><input type="radio" name="provider" value=@ProviderNames(index)>@ProviderNames(index)</li>
+            }
+            </ul>
+            <INPUT type="hidden" Name="UserId" size="0" value = @userId></INPUT><br>
+            <INPUT type="submit" Name="Submit" value="Submit">
+            <INPUT type="submit" Name="Submit" value="Return">
+        </FORM>
+    </body>
+</html>

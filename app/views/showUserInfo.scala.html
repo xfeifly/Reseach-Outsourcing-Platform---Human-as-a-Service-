@@ -1,0 +1,40 @@
+@(userId: String, keywords: List[String], ongoing: List[String], finished: List[String])
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Information</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+    </head>
+
+    <body>
+        <FORM method="GET" action="/returnFromUserInfo">
+            <center>
+                <div id="legend">
+                <legend class="">User Requested History Information</legend>
+                </div>
+                User Id: <ul class="list-group">@userId</ul><br>
+                Requested Keywords of Query Projects:<br>
+                <ul>
+                @for(index <- 0 until keywords.size) {
+                    <li>@keywords(index)</li>
+                }
+                </ul><br>
+                Ongoing Projects Requested History:<br>
+                <ul>
+                @for(index <- 0 until ongoing.size) {
+                    <li>@ongoing(index)</li>
+                }
+                </ul><br>
+                Finished Projects Requested History:<br>
+                <ul>
+                @for(index <- 0 until finished.size) {
+                    <li>@finished(index)</li>
+                }
+                </ul><br>
+                <INPUT type="submit" name="Submit" value="Return">
+            </center>
+        </FORM>
+    </body>
+</html>

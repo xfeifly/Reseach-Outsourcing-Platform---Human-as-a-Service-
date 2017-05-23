@@ -1,0 +1,93 @@
+@(userId: String)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Please choose to show providers</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <style>
+            .styled-select select {
+               background: transparent;
+               border: none;
+               font-size: 14px;
+               height: 29px;
+               padding: 5px; /* If you add too much padding here, the options won't show in IE */
+               width: 268px;
+            }
+            .styled-select {
+               background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+               height: 29px;
+               overflow: hidden;
+               width: 240px;
+            }
+            .styled-select.slate {
+               background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+               height: 34px;
+               width: 240px;
+            }
+            .styled-select.slate select {
+               border: 1px solid #ccc;
+               font-size: 16px;
+               height: 34px;
+               width: 268px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <FORM method="POST" action="/searchProvider">
+            <center>
+            <div id="legend">
+            <legend class="">Show providers</legend>
+            </div>
+            
+            <div class="styled-select slate" >
+                <select name = "selection" class="selectpicker" id="selection" onchange=showDiv(this)>
+                    <option value="Popularity">Based on popularity</option>
+                    <option value="Ranking">Based on ranking</option>
+                    <option value="Expertise">Based on the expertise</option>
+                    <option value="KeyWords">Based on key Words</option>
+                </select>
+            </div>
+            <br>
+            <script type="text/javascript">
+                    function showDiv(select) {
+                        if (select.value=="Popularity") {
+                            document.getElementById('expertiseInput').style.display = "none";
+                            document.getElementById('keywordsInput').style.display = "none";
+                        }
+                        if (select.value=="Ranking") {
+                            document.getElementById('expertiseInput').style.display = "none";
+                            document.getElementById('keywordsInput').style.display = "none";
+                        }
+                        if (select.value=="Expertise") {
+                            document.getElementById('expertiseInput').style.display = "block";
+                            document.getElementById('keywordsInput').style.display = "none";
+                        }
+                        if(select.value=="KeyWords"){
+                            document.getElementById('expertiseInput').style.display = "none";
+                            document.getElementById('keywordsInput').style.display = "block";
+                        }
+                    }
+            </script>
+            <div class="control-group">
+                <div class="controls">
+                    <div id="expertiseInput" style="display:none;">
+                    <label class="control-label"  for="Expertise">Expertise:</label>
+                    <INPUT type="text" name="Expertise" size="35" placeholder = "Expertise"></INPUT><br>
+                    </div>
+                    <br>
+                    <div id="keywordsInput" style="display:none;">
+                    <label class="control-label"  for="Expertise">Keywords:</label>
+                    <INPUT type="text" name="Keywords" size="35" placeholder = "Keywords"></INPUT><br>
+                    </div>
+                    <br>
+                    <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+                    <INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">
+                    <INPUT type="submit" name="Submit" value="Return" class="btn btn-default">
+                </div>
+            </div>
+            </center>
+        </FORM>
+    </body>
+</html>

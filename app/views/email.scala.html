@@ -1,0 +1,23 @@
+@(message: String, providerId: String, userId: String)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Please choose to show providers</title>
+</head>
+<body>
+            <FORM method="POST" action="/userSendEmail">
+                <p>Email Title</p>
+                <Input type="text" name="emailTitle" size="50" placeholder="Email Title"></INPUT><br>
+                <p>Email Content</p>
+                <Input type="text" name="emailContent" size="100" placeholder="Email Content"></INPUT><br>
+                <br>
+                    <l1>@message</l1>
+                <br>
+                <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+                <INPUT type="hidden" name="ProviderId" size="0" value = @providerId></INPUT><br>
+                <INPUT type="submit" name="Submit" value="Send" class="btn btn-default">
+                <INPUT type="submit" name="Submit" value="Return" class="btn btn-default">
+            </FORM>
+</boby>
+
+</html>

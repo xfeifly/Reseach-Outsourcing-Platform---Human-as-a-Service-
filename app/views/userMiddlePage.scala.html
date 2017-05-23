@@ -1,0 +1,90 @@
+@(userId: String)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Please choose your option:</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/userMiddlePage.css" type="text/css">
+        <style>
+            .styled-select select {
+               background: transparent;
+               border: none;
+               font-size: 14px;
+               height: 29px;
+               padding: 5px; /* If you add too much padding here, the options won't show in IE */
+               width: 268px;
+            }
+            .styled-select {
+               background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+               height: 29px;
+               overflow: hidden;
+               width: 240px;
+            }
+            .styled-select.slate {
+               background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+               height: 34px;
+               width: 240px;
+            }
+            .styled-select.slate select {
+               border: 1px solid #ccc;
+               font-size: 16px;
+               height: 34px;
+               width: 268px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">R.O.P.</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://localhost:9000">Home</a></li>
+                    <li><a href="http://localhost:9000/userIntroduction">Introduction for service users </a></li>
+                    <li><a href="http://localhost:9000/providerIntroduction">Introduction for service providers</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost:9000/renderRegister"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="http://localhost:9000/renderSignIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <center>
+        <div id="legend">
+        <legend class="">please choose your option:</legend>
+        </div>
+        
+        <FORM method="POST" action="/userMiddle">
+            <!--<div class="styled-select slate">-->
+            <!--    <select name = "selection" class="selectpicker">-->
+            <!--      <option value="UserInput">User query input</option>-->
+            <!--      <option value="ShowProviders">Show all the providers</option>-->
+            <!--      <option value="ShowUserInfo">Show the user info</option>-->
+            <!--    </select>-->
+            <!--    <br>-->
+            <!--</div>    -->
+            <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+            
+            <button type="submit" name="Submit" value="UserInput" style="height:50px;width:200px">User query input</button>
+            <li>User Query Input: For users to input query conditions to search for certain services and projects </li><br>
+            <br>
+            <button type="submit" name="Submit" value="ShowProviders" style="height:50px;width:200px">Show all the providers</button><br>
+            <li>Show all the providers: For users to search for providers and contact with providers if you want.</li><br>
+            <br>
+            <button type="submit" name="Submit" value="ShowUserInfo" style="height:50px;width:200px">Show the user info</button><br>
+            <li>Show the user info: For users to check his/her own information</li><br>
+            <br>
+            <br>
+            <button type="submit" name="Submit" value="Return" style="height:30px;width:100px">Return</button><br>
+            <!--<INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">-->
+            <!--<INPUT type="submit" name="Submit" value="Return" class="btn btn-default">-->
+        </FORM>
+        <br>
+        <br>
+
+        
+        </center>
+    </body>
+</html>

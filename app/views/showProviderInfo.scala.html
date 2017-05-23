@@ -1,0 +1,61 @@
+@(providerId: String, userId: String, credential: String, Area: String, Publication: String, profileService: String, ongoing: List[String], finished: List[String], comment: List[String])
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Provider Information</title>
+    </head>
+
+    <body>
+        <h1>Provider's Detailed Information:</h1>
+        <FORM method="POST" action="/returnFromProviderInfo">
+            Provider Credential: <ul>@credential</ul><br>
+            provider Research Area: <ul>@Area</ul><br>
+            Provider Publication: <ul>@Publication</ul><br>
+            Project Service:  <ul>@profileService</ul><br>
+            Provider Ongoing Projects:<br>
+            <ul>
+            @for(index <- 0 until ongoing.size) {
+                <li>@ongoing(index)
+                <select name = "@ongoing(index)" class="selectpicker">
+                    <option value="undefine">Select</option>
+                    <option value="0:@ongoing(index)">0</option>
+                    <option value="1:@ongoing(index)">1</option>
+                    <option value="2:@ongoing(index)">2</option>
+                    <option value="3:@ongoing(index)">3</option>
+                    <option value="4:@ongoing(index)">4</option>
+                    <option value="5:@ongoing(index)">5</option>
+                </select>
+                </li>
+            }
+            </ul><br>
+            Provider Finished Projects:<br>
+            <ul>
+            @for(index <- 0 until finished.size) {
+                <li>@finished(index)
+                    <select name = "@finished(index)" class="selectpicker">
+                        <option value="undefine">Select</option>
+                        <option value="0:@finished(index)">0</option>
+                        <option value="1:@finished(index)">1</option>
+                        <option value="2:@finished(index)">2</option>
+                        <option value="3:@finished(index)">3</option>
+                        <option value="4:@finished(index)">4</option>
+                        <option value="5:@finished(index)">5</option>
+                    </select>
+                </li>
+            }
+            </ul><br>
+            Comments History: You can leave your comments here and check others' comments history
+            @for(index <- 0 until comment.size) {
+               <li>@comment(index)</li>
+            }
+            <INPUT type="text" name="Comment" size="35" placeholder="Type Your Comment"><br>
+            <INPUT type="hidden" name="providerId" size="0" value= @providerId></INPUT><br>
+            <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+            <INPUT type="submit" name="Submit" value="Send Email">
+            <INPUT type="submit" name="Submit" value="Return">
+            <INPUT type="submit" name="Submit" value="Submit">
+            <INPUT type="submit" name="Submit" value="Comment">
+        </FORM>
+    </body>
+</html>

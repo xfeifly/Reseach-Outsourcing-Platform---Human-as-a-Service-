@@ -1,0 +1,29 @@
+@(Projects: ArrayList[String], userId: String)
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Project Names</title>
+    </head>
+    <body>
+        <h1>All your projects:</h1>
+        <FORM method="POST" action="/EditProjectStatus">
+            <ul>
+            @for(index <- 0 until Projects.size) {
+              <li><input type="radio" name="projectsIndex" value=@index>@Projects(index)</li>
+            }
+            </ul><br>
+            <p>Change status of the project to: </p>
+            <div class="styled-select slate">
+                        <select name = "StatusSelection" class="selectpicker">
+                          <option value="in-market">In market</option>
+                          <option value="pending">Pending</option>
+                          <option value="on-going">On going</option>
+                          <option value="finished">Finished</option>
+                        </select>
+            </div><br>
+            <INPUT type="hidden" Name="UserId" size="0" value = @userId></INPUT><br>
+            <INPUT type="submit" Name="Submit" value="Submit">
+            <INPUT type="submit" Name="Submit" value="Return">
+        </FORM>
+    </body>
+</html>

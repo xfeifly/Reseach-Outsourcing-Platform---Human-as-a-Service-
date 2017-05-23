@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            .styled-select select {
+               background: transparent;
+               border: none;
+               font-size: 14px;
+               height: 29px;
+               padding: 5px; /* If you add too much padding here, the options won't show in IE */
+               width: 250px;
+            }
+            .styled-select {
+               background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+               height: 29px;
+               overflow: hidden;
+               width: 220px;
+            }
+            .styled-select.slate {
+               background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+               height: 34px;
+               width: 220px;
+            }
+            .styled-select.slate select {
+               border: 1px solid #ccc;
+               font-size: 16px;
+               height: 34px;
+               width: 250px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1></h1>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">R.O.P.</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="http://localhost:9000">Home</a></li>
+                    <li><a href="http://localhost:9000/userIntroduction">Introduction for service s users </a></li>
+                    <li><a href="http://localhost:9000/providerIntroduction">Introduction for service providers</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://localhost:9000/renderRegister"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="http://localhost:9000/renderSignIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </nav>
+        <center>
+        <FORM method="POST" action="/register" class="form-horizontal">
+            <div id="legend">
+            <legend class="">Register</legend>
+            </div>
+            
+            
+            <div class="control-group">
+                <!-- UserID -->
+                <label class="control-label"  for="userID">User ID:</label>
+                <div class="controls">
+                    <INPUT type="text" name="userID" size="35" class="input-xlarge"><br>
+                    <p class="help-block">Username can contain any letters or numbers, without spaces.</p>
+                </div>    
+            </div>
+            
+            <div class="control-group">
+                <!-- Password -->
+                <div class="controls">
+                    <label class="control-label"  for="password">Password:</label><br>
+                    <INPUT type="password" name="password" size="35" class="input-xlarge"><br>
+                    <p class="help-block">Please provide your password.</p>
+                </div>    
+            </div>
+            
+            <div class="control-group">
+                <!-- Password Confirm -->
+                <div class="controls">
+                    <label class="control-label"  for="repassword">Password(Confirm):</label><br>
+                    <INPUT type="password" name="repassword" size="35" class="input-xlarge"><br>
+                    <p class="help-block">Please confirm password.</p>
+                </div>    
+            </div>
+            
+            
+            
+            <div class="control-group">
+                <!-- E-mail -->
+                <label class="control-label"  for="email">Email:</label>
+                <div class="controls">
+                    <INPUT type="email" name="email" size="35" class="input-xlarge"><br>
+                    <p class="help-block">Please provide your E-mail.</p>
+                </div>    
+            </div>
+            
+            
+            <div class="control-group">
+                <!-- Securtiy_Question -->
+                <label class="control-label"  for="Security">Security Answer:</label>
+                
+                <div class="controls">
+                    <INPUT type="text" name="security_question" size="35" class="input-xlarge"><br>
+                    <p class="help-block">Security questions: Please type your security answer!</p>
+                </div>    
+            </div>
+            
+            
+        <br>
+        <br>
+        <div class="styled-select slate">
+        	<select name = "selection" class="selectpicker">             
+        		<option value="User">User</option>              
+        		<option value="Provider">Provider</option>            
+    	    </select>
+    	</div>
+        <input type="submit" name="Submit" value="Register" class="btn btn-default">
+        </FORM>
+        </center>
+    </body>
+</html>

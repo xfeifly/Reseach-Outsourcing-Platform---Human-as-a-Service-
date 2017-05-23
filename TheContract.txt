@@ -1,0 +1,119 @@
+Standard Services Agreement
+
+
+Always upload your project agreement and statement of work document to the Elance Private Message Board ("PMB").
+This Standard Services Agreement is a sample provided for your information only and may not be relied upon as legal advice. This agreement might not be appropriate for your requirements. Elance makes no warranty about the suitability of this sample agreement and accepts no liability arising out of the use of this agreement. Please consult your legal or business advisor for further information or advice.
+
+ STANDARD SERVICES AGREEMENT
+
+THIS AGREEMENT is made on
+
+
+Fri Dec 02 14:07:11 PST 2016
+BETWEEN
+
+teddywang
+of (the "Buyer"); and
+
+TonyStark
+of (the "Service Provider"),
+
+collectively referred to as the "Parties". RECITALS
+The Buyer wishes to be provided with the Services (defined below) by the Service Provider and the Service Provider agrees to provide the Services to the Buyer on the terms and conditions of this Agreement.
+
+Key Terms
+
+1.1  Services
+The Service Provider shall provide the following services ("Services") to the Buyer in accordance with the terms and conditions of this Agreement:
+[Insert a description of the Services here]
+
+1.2  Delivery of the Services
+Start date: The Service Provider shall commence the provision of the Services on [insert date here].
+Completion date: The Service Provider shall complete/cease to provide (delete as appropriate) the Services by/on (delete as appropriate) [insert date here] ("Completion Date").
+Key Dates: The Service Provider agrees to provide the following parts of the Services at the specific dates set out below: [insert dates here]
+
+1.3  Site
+The Service Provider shall provide the Services at the following site(s): [insert details here if applicable]
+
+1.4  Price
+As consideration for the provision of the Services by the Service Provider, the price for the provision of the Services is [insert price here] ("Price").
+The Buyer shall/shall not (delete as appropriate) pay for the Service Provider???s out-of-pocket expenses [comprising [please insert examples here, if agreed]).
+
+1.5  Payment
+The Buyer agrees to pay the Price to the Service Provider on the following dates [if appropriate]:
+[Specify whether the price will be paid in one payment, in installments or upon completion of specific milestones. These details should be specified here.]
+The Service Provider shall invoice the Buyer through Elance for the Services that it has provided to the Buyer weekly/monthly/after the Completion Date] (delete as appropriate).
+The Buyer shall pay such invoices within 21 days of their receipt from the Service Provider.
+The method of payment of the Price by the Buyer to the Service Provider shall be by:
+[check][cheque] sent to the following address: [insert details here]
+wire transfer through Elance to the following account:
+credit card payment through Elance
+(delete as appropriate)
+Any charges payable under this Agreement are exclusive of any applicable taxes, tariff surcharges or other like amounts assessed by any governmental entity arising as a result of the provision of the Services by the Service Provider to the Buyer under this Agreement and such shall be payable by the Buyer to the Service Provider in addition to all other charges payable hereunder.
+
+General terms
+
+2.1  Intellectual Property Rights
+The Service Provider agrees to grant to the Buyer a non-exclusive, irrevocable, royalty free licence to use, copy and modify any elements of the Material not specifically created for the Buyer as part of the Services. In respect of the Material specifically created for the Buyer as part of the Services, the Service Provider assigns the full title guarantee to the Buyer and any all of the copyright, other intellectual property rights and any other data or material used or subsisting in the Material whether finished or unfinished. If any third party intellectual property rights are used in the
+Material the Service Provider shall ensure that it has secured all necessary consents and approvals to use such third party intellectual property rights for the Service Provider and the Buyer. For the purposes of this Clause 2.1, "Material" shall mean the materials, in whatever form, used by the Service Provider to provide the Services and the products, systems, programs or processes, in whatever form, produced by the Service Provider pursuant to this Agreement.
+
+2.2  Warranty
+The Service Provider represents and warrants that:
+it will perform the Services with reasonable care and skill; and
+the Services and the Materials provided by the Service Provider to the Buyer under this Agreement will not infringe or violate any intellectual property rights or other right of any third party.
+
+2.3  Limitation of liability
+Subject to the Buyer???s obligation to pay the Price to the Service Provider, either party???s liability in contract, tort or otherwise (including negligence) arising directly out of or in connection with this Agreement or the performance or observance of its obligations under this Agreement and every applicable part of it shall be limited in aggregate to the Price.
+To the extent it is lawful to exclude the following heads of loss and subject to the Buyer???s obligation to pay the Price, in no event shall either party be liable for any loss of profits, goodwill, loss of business, loss of data or any other indirect or consequential loss or damage whatsoever.
+Nothing in this Clause 2.3 will serve to limit or exclude either Party???s liability for death or personal injury arising from its own negligence.
+
+2.4  Term and Termination
+This Agreement shall be effective on the date hereof and shall continue, unless terminated sooner in accordance with Clause 2.4(b), until the Completion Date.
+Either Party may terminate this Agreement upon notice in writing if:
+the other is in breach of any material obligation contained in this Agreement, which is not remedied (if the same is capable of being remedied) within 30 days of written notice from the other Party so to do; or
+a voluntary arrangement is approved, a bankruptcy or an administration order is made or a receiver or administrative receiver is appointed over any of the other Party's assets or an undertaking or a resolution or petition to wind up the other Party is passed or presented (other than for the purposes of amalgamation or reconstruction) or any analogous procedure in the country of incorporation of either party or if any circumstances arise which entitle the Court or a creditor to appoint a receiver, administrative receiver or administrator or to present a winding-up petition or make a winding-up order in respect of the other Party.
+[For European Buyers and Service Providers only] If the Buyer is a consumer and the Distance Selling Directive (97/7/EC) (the "Directive") applies to this Agreement, the Buyer may terminate this Agreement within the relevant timescales prescribed by the regulations or laws in the relevant Member State which implement the requirements of the Directive in respect of a right for the Buyer to withdraw from a contract. In the event of termination in accordance with this Clause 2.4(c), the liability of the Buyer to the Service Provider shall be as prescribed in the Directive or in any regulations or laws implementing its requirements in the relevant Member States.
+Any termination of this Agreement (howsoever occasioned) shall not affect any accrued rights or liabilities of either Party nor shall it affect the coming into force or the continuance in force of any provision hereof which is expressly or by implication intended to come into or continue in force on or after such termination.
+
+2.5  Relationship of the Parties
+The Parties acknowledge and agree that the Services performed by the Service Provider, its employees, agents or sub-contractors shall be as an independent contractor and that nothing in this Agreement shall be deemed to constitute a partnership, joint venture, agency relationship or otherwise between the parties.
+
+2.6  Confidentiality
+Neither Party will use, copy, adapt, alter or part with possession of any information of the other which is disclosed or otherwise comes into its possession under or in relation to this Agreement and which is of a confidential nature. This obligation will not apply to information which the recipient can prove was in its possession at the date it was received or obtained or which the recipient obtains from some other person with good legal title to it or which is in or comes into the public domain otherwise than through the default or negligence of the recipient or which is independently developed by or for the recipient.
+
+2.7  Notices
+Any notice which may be given by a Party under this Agreement shall be deemed to have been duly delivered if delivered by hand, first class post, facsimile transmission or electronic mail to the address of the other Party as specified in this Agreement or any other address notified in writing to the other Party. Subject to any applicable local law provisions to the contrary, any such communication shall be deemed to have been made to the other Party, if delivered by:
+first class post, 2 days from the date of posting;
+hand or by facsimile transmission, on the date of such delivery or transmission; and
+electronic mail, when the Party sending such communication receives confirmation of such delivery by electronic mail.
+
+2.8  Miscellaneous
+The failure of either party to enforce its rights under this Agreement at any time for any period shall not be construed as a waiver of such rights.
+If any part, term or provision of this Agreement is held to be illegal or unenforceable neither the validity or enforceability of the remainder of this Agreement shall be affected.
+Neither Party shall assign or transfer all or any part of its rights under this Agreement without the consent of the other Party.
+This Agreement may not be amended for any other reason without the prior written agreement of both Parties.
+This Agreement constitutes the entire understanding between the Parties relating to the subject matter hereof unless any representation or warranty made about this Agreement was made fraudulently and, save as may be expressly referred to or referenced herein, supersedes all prior representations, writings, negotiations or understandings with respect hereto.
+Neither Party shall be liable for failure to perform or delay in performing any obligation under this Agreement if the failure or delay is caused by any circumstances beyond its reasonable control, including but not limited to acts of god, war, civil commotion or industrial dispute. If such delay or failure continues for at least 7 days, the Party not affected by such delay or failure shall be entitled to terminate this Agreement by notice in writing to the other.
+This Clause 2.8(g) and Clauses 2.3, 2.5, 2.6, 2.7 and 2.8 of this Agreement shall survive any termination or expiration.
+This Agreement shall be governed by the laws of the jurisdiction in which the Buyer is located (or if the Buyer is based in more than one country, the country in which its headquarters are located) (the "Territory") and the parties agree to submit disputes arising out of or in connection with this Agreement to the non-exclusive of the courts in the Territory.
+Amendments to existing clauses
+
+Clause(s) [insert amended clause reference(s) here] shall be amended to read as follows:
+
+Additional clauses
+
+AS WITNESS the hands of the Parties hereto or their duly authorised representatives the day and year first above written.
+SIGNED by
+
+for and on behalf of
+
+
+teddywang
+
+ SIGNED by
+
+for and on behalf of
+
+
+TonyStark
+

@@ -1,0 +1,53 @@
+@(userId: String, users: ArrayList[String], providers: ArrayList[String])
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Delete User Page</title>
+</head>
+<body>
+  <div id="legend">
+    <legend class="">Administrator: Delete bad users Page</legend>
+  </div><br>
+
+  <FORM method="POST" action="/adminDelete">
+      <!--<div class="styled-select slate">-->
+      <!--    <select name = "selection" class="selectpicker">-->
+      <!--      <option value="UserInput">User query input</option>-->
+      <!--      <option value="ShowProviders">Show all the providers</option>-->
+      <!--      <option value="ShowUserInfo">Show the user info</option>-->
+      <!--    </select>-->
+      <!--    <br>-->
+      <!--</div>    -->
+
+    <p>ALL Users: </p><br>
+    <ul>
+      @for(index <- 0 until users.size) {
+        <li><input type="checkbox" name="users" value=@index>@users(index)</li>
+      }
+    </ul>
+    <br>
+    <br>
+    <p>ALL Providers: </p><br>
+    <ul>
+    @for(index <- 0 until providers.size) {
+      <li><input type="checkbox" name="providers" value=@index>@providers(index)</li>
+    }
+    </ul>
+    <br>
+    <br>
+
+    <button type="submit" name="Submit" value="DeletUser" style="height:50px;width:200px">Delete the User!</button><br>
+    <li>Delete User: Delete the user who abuse and do fraudulent activities.</li><br>
+    <br>
+    <br>
+    <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+    <button type="submit" name="Submit" value="Return" style="height:30px;width:100px">Return</button><br>
+      <!--<INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">-->
+      <!--<INPUT type="submit" name="Submit" value="Return" class="btn btn-default">-->
+  </FORM>
+  <br>
+  <br>
+
+
+</body>
+</html>

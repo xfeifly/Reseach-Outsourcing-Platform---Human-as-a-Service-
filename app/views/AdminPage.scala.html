@@ -1,0 +1,86 @@
+@(userId: String, users: ArrayList[String], providers: ArrayList[String])
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Please choose your option:</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/userMiddlePage.css" type="text/css">
+        <style>
+        .styled-select select {
+            background: transparent;
+            border: none;
+            font-size: 14px;
+            height: 29px;
+            padding: 5px; /* If you add too much padding here, the options won't show in IE */
+            width: 268px;
+        }
+        .styled-select {
+            background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+            height: 29px;
+            overflow: hidden;
+            width: 240px;
+        }
+        .styled-select.slate {
+            background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;
+            height: 34px;
+            width: 240px;
+        }
+        .styled-select.slate select {
+            border: 1px solid #ccc;
+            font-size: 16px;
+            height: 34px;
+            width: 268px;
+        }
+        .returnButton {
+
+            bottom: 0;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div id="legend">
+            <legend class="">Administrator Page</legend>
+        </div>
+
+        <FORM method="POST" action="/adminMiddle">
+            <fieldset>
+                <legend>All User:</legend>
+                <ul>
+                    @for(index <- 0 until users.size) {
+                        <li><input type="checkbox" name="users" value=@index>@users(index)</li>
+                    }
+                </ul>
+                <br>
+                <button type="submit" name="Submit" value="DeletUser" style="height:50px;width:200px">Delete the User!</button><br>
+                    <!--<li>Delete User: Delete the user who abuse and do fraudulent activities.</li><br>-->
+            </fieldset>
+            <br>
+            <br>
+            <legend>All Provider:</legend>
+            <ul>
+            @for(index <- 0 until providers.size) {
+                <li><input type="checkbox" name="providers" value=@index>@providers(index)</li>
+            }
+            </ul>
+            <br>
+            <button type="submit" name="Submit" value="DeletProvider" style="height:50px;width:200px">Delete the Provider!</button><br>
+                <!--<li>Delete Provider: Delete the provider who abuse and do fraudulent activities.</li><br>-->
+            <br>
+            <br>
+            <legend>Generate Contract:</legend>
+            <button type="submit" name="Submit" value="GenerateContract" style="height:50px;width:200px">Generate Contract</button><br>
+                <!--<li>Generate Contract: Generate contract template for the user and provider and send it to them as email</li><br>-->
+            <br>
+            @*<p>@message</p>*@
+            <br>
+
+            <INPUT type="hidden" name="UserId" size="0" value = @userId></INPUT><br>
+            <button type="submit" name="Submit" class="returnButton" value="Return" style="height:30px;width:100px">Return</button><br>
+                <!--<INPUT type="submit" name="Submit" value="Submit" class="btn btn-default">-->
+                <!--<INPUT type="submit" name="Submit" value="Return" class="btn btn-default">-->
+        </FORM>
+        <br>
+        <br>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+.sbtserver
+.DS_Store
+/RUNNING_PID
+.TheContract.txt

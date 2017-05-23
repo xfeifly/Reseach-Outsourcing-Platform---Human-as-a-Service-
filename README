@@ -1,0 +1,138 @@
+
+SOC Research Outsourcing Platform
+
+In this team project, you are asked to design and develop an SOA solution supporting the outsourcing concept in the field of Service Oriented Computing.
+
+The motivation and state of art can be found in my this year's Best Paper Runner-up at IEEE International Conference on Services Computing (SCC 2016) in July titled "Human as a Service.pdf" - you can download from here. In short, we predict the next wave will be Human as a Service - how to publish and leverage human services by leveraging SOC techniques. In this project, we aim to build a pilot platform on this topic. 
+
+Data sources:
+
+1) In your earlier homework, you have studied and parsed DBLP dataset for SOC research:
+
+-IEEE International Conference on Web Services (ICWS, started from 2003)
+
+-IEEE International Conference on Services Computing (SCC, started from 2004)
+
+-IEEE Transactions on Services Computing (TSC, started from 2008)
+
+-International Journal of Web Services Research (JWSR, started from 2004)
+
+2) In this project, we will add detailed contents by providing some APIs:
+
+-Abstract and citations for each paper;
+
+-Paper content in the format of PDF;
+
+-You may need to write code to crawl authors' personal web pages if they have.
+
+3) You will extract the data from above to form your dataset.
+
+Platform:
+
+-To ensure consistency and comparability among teams, while providing sufficient TA support, we suggest that the Play! framework be used, which is one of the most popular Java-based SOA solution development platforms.
+
+-In reality, real-world projects always adopt a framework as foundation to develop software. In this course we suggest to adopt the Play! framework.
+
+Required Feature List:
+
+●    Login: Provide a log in page, for service users and service provider (a role selection):
+
+     Login as a service user
+     Login as a service provider
+     
+●    Register users: Provide a registration page, allowing for potential service users/providers to register on the platform:
+     User id
+     Password
+     Email
+     Security questions
+     
+●    Service publication: Provide a service editing page, allowing for individuals and research groups to publish their provided services with the following information:
+
+     Credential (education, job, etc.)
+     Research areas
+     Publications
+     Projects (present + past)
+     Professional services to provide (types: consultant, design, development, proof-reading, etc.)
+     
+●    Publish a service project: Provide a page for service users to request a research service on the platform:
+     Project name
+     Brief descriptions of the project
+     Required expertise
+     Time frame requirements
+     Offered price
+          
+●    Show projects: Provide a page to show projects:
+     Finished projects;
+     Ongoing projects
+     New projects
+     Provide sorting facility      
+     
+●    Show service providers: Provide a page to show service providers:
+     Based on popularity (the number of projects they have finished/are doing);
+     Based on ranking;
+     Based on expertise (default categories);
+     Based on keyword search
+ 
+●    Service provider Info page: Provide a page to show the profile of a service provider:
+     Credential (education, job, etc.)
+     Research areas
+     Publications
+     Finished projects with rating;
+     Ongoing projects
+     Professional services to provide (types: consultant, design, development, proof-reading, etc.)
+       
+●    Service user Info page: Provide a page to show the profile of a service user:
+     User id;
+     Requested service keywords;
+     Finished projects;
+     Ongoing projects
+
+
+
+This file will be packaged with your application when using `activator dist`.
+
+There are several demonstration files available in this template.
+
+Controllers
+
+
+- HomeController.java:
+
+  Shows how to handle simple HTTP requests.
+
+- AsyncController.java:
+
+  Shows how to do asynchronous programming when handling a request.
+
+- CountController.java:
+
+  Shows how to inject a component into a controller and use the component when
+  handling requests.
+
+Components
+
+
+- Module.java:
+
+  Shows how to use Guice to bind all the components needed by your application.
+
+- Counter.java:
+
+  An example of a component that contains state, in this case a simple counter.
+
+- ApplicationTimer.java:
+
+  An example of a component that starts when the application starts and stops
+  when the application stops.
+
+Filters
+
+
+- Filters.java:
+
+  Creates the list of HTTP filters used by your application.
+
+- ExampleFilter.java
+
+  A simple filter that adds a header to every response.
+

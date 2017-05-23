@@ -1,0 +1,81 @@
+@(newProjects: ArrayList[Project], ongoingProjects : ArrayList[Project], finishedProjects : ArrayList[Project])
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>User Navigation</title>
+        <script type="text/javascript">
+        function sortList(ul){
+            var new_ul = ul.cloneNode(false);
+            var lis = [];
+            for(var i = ul.childNodes.length; i--;){
+                if(ul.childNodes[i].nodeName === 'LI')
+                    lis.push(ul.childNodes[i]);
+            }
+            lis.sort(function(a, b){
+               return parseInt(b.childNodes[0].data , 10) - parseInt(a.childNodes[0].data , 10);
+            });
+            for(var i = 0; i < lis.length; i++)
+                new_ul.appendChild(lis[i]);
+            ul.parentNode.replaceChild(new_ul, ul);
+        }
+        </script>
+    </head>
+
+    <body>
+        <h1>Show Project</h1>
+        <FORM method="POST" action="/sortProject">
+            <br>
+            <l1></l1>
+            <p> new project</p>
+            <ul>
+            @for(newproject <- newProjects) {
+              <li>@newproject.getProjectName()</li>
+            }
+            </ul>
+           <p> ongoing project</p>
+           <script type="text/javascript">
+                !function finish(){
+                var uls = document.getElementsByTagName('ul');
+                sortList( uls[uls.length - 1] );
+                }();
+            </script>
+           
+            <ul>
+            @for(onproject <- ongoingProjects) {
+              <li>@onproject.getProjectName()</li>
+            }
+            </ul>
+            <p> finished project</p>
+            <script type="text/javascript">
+                !function finish(){
+                var uls = document.getElementsByTagName('ul');
+                sortList( uls[uls.length - 1] );
+                }();
+            </script>
+            
+            <ul>
+            @for(finishproject <- finishedProjects) {
+              <li>@finishproject.getProjectName()</li>
+            }
+            </ul>
+            <script type="text/javascript">
+                !function finish(){
+                var uls = document.getElementsByTagName('ul');
+                sortList( uls[uls.length - 1] );
+                }();
+            </script>
+            
+            
+            
+            
+            <br>
+
+            
+            <br>
+            <br>
+            <INPUT type="submit" name="Submit" value="Sort By Name">
+            <INPUT type="submit" name="Submit" value="Return">
+        </FORM>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+
+@(userId: String)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Provide your personal information</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    </head>
+
+    <body>
+        <FORM method="POST" action="/servicePublication">
+
+            <center>
+            <div id="legend">
+            <legend class="">Service Publication</legend>
+            </div>
+            
+            <div class="control-group">
+                <!-- Password -->
+                <div class="controls">
+                    <label class="control-label"  for="Credential">Credential:</label>
+                    <INPUT type="text" name="Credential" size="35" placeholder = "Education, job, etc."></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="Research">Research Area:</label>
+                    <INPUT type="text" name="Research" size="35" placeholder = "Research areas"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="Publication">Publication:</label>
+                    <INPUT type="text" name="Publication" size="35" placeholder = "Publication"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="ProjectName">Project Name:</label>
+                    <INPUT type="text" name="ProjectName" size="35" placeholder = "Project Name"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="ProjectDes">Project Description:</label>
+                    <INPUT type="text" name="ProjectDes" size="35" placeholder = "Project Description"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="ProjectExpertise">Project Expertise:</label>
+                    <INPUT type="text" name="ProjectExpertise" size="35" placeholder = "Project Expertise"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="StartTime">Start Time:</label>
+                    <INPUT type="date" (mm-dd-yyyy) name="StartTime"><br>
+                    <br>
+                    <label class="control-label"  for="EndTime">End Time:</label>
+                    <INPUT type="date"(mm-dd-yyyy) name="EndTime"><br>
+                    <br>
+                    <label class="control-label"  for="StatusOfProject">Status of Project:</label>
+                    <div class="styled-select slate">
+                        <select name = "StatusSelection" class="selectpicker">
+                          <option value="in-market">In market</option>
+                          <option value="pending">Pending</option>
+                          <option value="on-going">On going</option>
+                          <option value="finished">Finished</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <label class="control-label"  for="ProjectExpertise">Price:</label>
+                    <INPUT type="text" name="ProjectPrice" size="35" placeholder = "Project Price"></INPUT><br>
+                    <br>
+                    <label class="control-label"  for="ProjectExpertise">Professional services to provide:</label>
+                    <INPUT type="text" name="Service" size="35" placeholder = "consultant, design, development, proof-reading, etc"></INPUT><br>
+                    <br>
+                </div>    
+            </div>
+
+            <INPUT type = "hidden" name="UserId" size="0" value = @userId></INPUT><br>
+            <INPUT type = "submit" name="Submit" value="Submit" class="btn btn-default"></INPUT>
+            <INPUT type = "submit" name="Submit" value="Return" class="btn btn-default"></INPUT>
+            
+            </center>
+        </FORM>
+    </body>
+</html>
